@@ -1,0 +1,203 @@
+body{
+    background-image: url("../img/bgrr.webp");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titreaccueil{
+    position: relative;
+    text-decoration: underline;
+    padding: 5px;
+    font-weight: bolder;
+    color: black;
+}
+
+
+/* div invisible */
+#contcyc {
+    display: none;
+    max-width: 600px;
+}
+
+
+/* Image invisible Selection de perso */
+.cyc {
+    background-image: url("../img/choose.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Boutton */
+
+    /* boutton changement de police */
+#btnpol {
+    width: 170px;
+    height: 80px;
+    background: red;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+}
+    /* Boutton changement de page */
+#btnsw {
+    width: 230px;
+    height: 80px;
+    background: red;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+    /* Boutton pour aggrandire le text */
+#btnsz {
+    width: 170px;
+    height: 80px;
+    background: red;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+    /* Boutton pour changer le bg, la size et le display de la div */
+#btnbgs {
+    width: 170px;
+    height: 80px;
+    background: red;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+}
+/* Fin des bouttons */
+
+
+/* Explosion */
+
+    /* Style pour le texte Explosion */
+#warn{
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    color: brown;
+    width: 200px;
+    font-weight: bolder;
+}
+
+    /* Style pour l'image Explosion */
+#explosion{
+    position: absolute;
+    left: 6%;
+    top: 95%;
+}
+
+    /* Dimension de l'image Explosion */
+#bs1{
+    height: 200px;
+    width: 200px;
+}
+
+/* Fin Explosion */
+
+
+
+/* Switch texte secret */
+
+    /* Style Texte original */
+#textdis {
+    background-color: black;
+    color: gold;
+    text-align: center;
+}
+    /* Style texte caché */
+#ggs {
+    background-color: black;
+    color: red;
+    display: none;
+    text-align: center;
+    font-size: 40px;
+}
+    /* Camouflage du faux lien */
+#flink {
+    color: blue;
+    text-decoration: underline;
+}
+/* Fin texte secret */
+
+
+
+/* Container Princiapl */
+
+    /* Style texte principal */
+#textgd {
+    border: 1px dotted black;
+    background-color: white;
+    opacity: 0.9;
+    color: black;
+    font-weight: bolder;
+}
+
+    /* style titre */
+#titreliste{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.smltitle {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+    /* Style img */
+#mush{
+    height: 300px;
+    width: 300px;
+}
+#shell{
+    height: 300px;
+    width: 400px;
+}
+#imgjump {
+    width: 250px;
+    height: 250px;
+}
+#imgdrift {
+    width: 250px;
+    height: 250px;
+}
+#imgshort {
+    height: 300px;
+    width: 400px;
+}
+
+/* Fin Container Principal */
+
+
+/*Button haut de page*/
+
+#PageUp-ind{
+    position : fixed;
+    bottom: 95px;
+    right: 40px;
+    background-color: black;
+   }
+
+#top-ind{
+    scroll-behavior: smooth;
+}
+
+#Pu-index{
+    color:gold;
+    text-decoration: none;
+}

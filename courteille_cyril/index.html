@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/img/favicon.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Mario Kart</title>
+</head>
+<body>
+
+    <div id="corps" class="container">
+
+        <!-- Row des Bouttons -->
+        <div class="row d-flex justify-content-center mt-3">
+
+            <!--boutton changement de police-->
+            <div class="col-3">
+                <button onclick = "bouttonpolice()" id="btnpol" class="pt-2">
+                    <p>Changer la police</p>
+                </button>
+            </div>
+        
+            <!--Boutton pour aggrandire le text-->
+            <div class="col-3">
+                <button onclick = "bouttonsize()" id="btnsz" class="pt-2">
+                    <p>Aggrandir le texte</p>
+                </button>
+            </div>
+
+            <!--boutton pour changer le bg, la size et le display de la div invisible-->
+            <div class="col-3">
+                <button onclick = "bouttondiv()" id="btnbgs" class="pt-2">
+                   <p>Choisis ton personnage !</p> 
+                </button>
+            </div>
+            
+            <!--Boutton pour switcher de page-->
+            <div class="col-3">
+                <button onclick="switchpagecha()" type="button" id="btnsw" class="pt-2" >
+                    <p>Vous êtes un joueur experimenté ? Par ici</p>
+                </button>
+            </div>
+        </div>
+        <!-- Fin Row des Bouttons -->
+
+
+        <!-- div invisible "choisis ton personnage" -->
+        <div class="container" id="contcyc">
+            <div class="row d-flex justify-content-center m-4 p-2"> 
+                <div id = "divbgs" class="cyc">
+                </div>
+            </div>
+        </div>
+            
+
+        <!-- titre principal -->
+        <div class="row">
+            <div class="col d-flex justify-content-center my-3 ">
+                <h1 id="titreaccueil">Mario Kart 8</h1>
+            </div>
+        </div>
+    
+        
+        <!-- Texte Explosion -->
+        <div id="warn" class="row d-flex justify-content-center">
+            <div class="col mb-5">
+                <h2>ATTENTION !!!</h2>
+            </div>
+        </div>
+
+        <!-- Image Explosion + function switch image -->
+        <div id ="explosion" class="row d-flex justify-content-center mt-5">
+            <div class="col-4">
+                <img onmouseenter="blueshell()" id="bs1" src="./public/img/favicon.webp" alt="">
+            </div>
+        </div>
+
+
+        <!-- Texte -->
+        <div id="mdg" class="row d-flex justify-content-center mb-4">
+            <div id ="textgd" class="col-7">
+                <!-- Titre principal -->
+                <h2 id="titreliste" class="pt-3">Les différents moyens de gagner à Mario Kart</h2>
+                <br>
+                <!-- Boost + img -->
+                <h4 class="smltitle">Les objets boost</h4>
+                <img  id="mush" src="./public/img/mushroom.webp" alt="">
+                <p>L'un des moyens les plus simples pour être devant ses concurents est d'aller plus vite qu'eux.
+                Pour celà, l'un des meilleurs moyens est d'utiliser des "objets de boost" tels que les champignons. 
+                </p>
+                <br>
+                <!-- Att + img -->
+                <h4 class="smltitle">Les objets d'attaques</h4>
+                <img id="shell" src="./public/img/shells.webp" alt="">
+                <p>Vos concurents ne cesse de vous passer devant ? Vous voullez que ça cesse ? Découvrez notre large gamme d'objet d'attaque, allant de la simple banane pour pièger les distraits en passant par les bombes au large champ d'action jusqu'à la terrible carapace bleue téléguidée qui n'aura de cesse de traquer et d'abattre la personne en 1ere position afin de réduire l'écart au classement. </p>
+                <br>
+                <!-- Jump et drift + img -->
+                <h4 class="smltitle">Les sauts et dérapages</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img id="imgjump" src="./public/img/jump.jpg" alt="">
+                        </div>
+                        <div class="col">
+                            <img id="imgdrift" src="./public/img/drift.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <p class="m-2"> C'est deux actions un peu plus complexe peuvent être décisives pour votre victoire, en effet, la bonne exécution de ces actions vous occtroira un boost de vitesse, plus ou moins long en fonction de l'action. Les deux action nécessitent également l'utilisation de la même gachette => "R"</p>
+                <h4 class="smltitle m-2">Les raccourcis</h4>
+                <img id="imgshort" src="./public/img/shortcut.jpg" alt="">
+                <p class="m-2 pb-4">Pourquoi perdre son temps à faire le tour complet du circuit quand vous pouvez juste en esquiver une partie grâce à un petit tour de passe-passe ?</p>
+            </div>
+        </div>
+        <!-- Fin texte -->
+
+
+        <!-- Texte secret pour victoire garantie + Function échange de texte -->
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-8 my-3">
+                <p onmouseenter = "textdisp()" id="textdis"> Pssst ... Hey ! Vous ! Oui vous, les petits pingouins et les petits pandas en quête de gloire ! Écoutez moi attentivement, la solution pour gagner toutes vos courses, peu importe le circuit, peu importe le véhicule, le cylindré ou les adverserairs est <span id="flink">ici</span> </p>
+            </div>
+        </div>
+
+        <!-- message caché -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-6 mb-3 ">
+                <p id="ggs"> GIT GUD SCRUBS !!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ancre haut de page -->
+    <button id="PageUp-ind" type="button" class="btn btn-outline-success"><a id="Pu-index" href="#titreaccueil">Haut de page </a></button>
+
+    <!-- footer -->
+    <footer class="text-center text-white absolute" style="background-color: #21081a;">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p id="textfooter">© 2022 Copyright: COURTEILLE Cyril - Molengeek - Formation Javascript 
+            <br> (Nintendo, please don't sue me)</p>
+        </div>
+    </footer>
+
+    <script src="./public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
